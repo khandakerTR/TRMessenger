@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		789596FD2A7049C800B71097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789596FC2A7049C800B71097 /* AppDelegate.swift */; };
+		789596FF2A7049C800B71097 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789596FE2A7049C800B71097 /* SceneDelegate.swift */; };
+		789597012A7049C800B71097 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789597002A7049C800B71097 /* ViewController.swift */; };
+		789597042A7049C800B71097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789597022A7049C800B71097 /* Main.storyboard */; };
+		789597062A7049C900B71097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789597052A7049C900B71097 /* Assets.xcassets */; };
+		789597092A7049C900B71097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789597072A7049C900B71097 /* LaunchScreen.storyboard */; };
+		789597142A7049C900B71097 /* TRMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789597132A7049C900B71097 /* TRMessengerTests.swift */; };
+		7895971E2A7049C900B71097 /* TRMessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7895971D2A7049C900B71097 /* TRMessengerUITests.swift */; };
+		789597202A7049C900B71097 /* TRMessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7895971F2A7049C900B71097 /* TRMessengerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		789597102A7049C900B71097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 789596F12A7049C800B71097 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 789596F82A7049C800B71097;
+			remoteInfo = TRMessenger;
+		};
+		7895971A2A7049C900B71097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 789596F12A7049C800B71097 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 789596F82A7049C800B71097;
+			remoteInfo = TRMessenger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		789596F92A7049C800B71097 /* TRMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		789596FC2A7049C800B71097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		789596FE2A7049C800B71097 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		789597002A7049C800B71097 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		789597032A7049C800B71097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		789597052A7049C900B71097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		789597082A7049C900B71097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7895970A2A7049C900B71097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7895970F2A7049C900B71097 /* TRMessengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRMessengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		789597132A7049C900B71097 /* TRMessengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRMessengerTests.swift; sourceTree = "<group>"; };
+		789597192A7049C900B71097 /* TRMessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRMessengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7895971D2A7049C900B71097 /* TRMessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRMessengerUITests.swift; sourceTree = "<group>"; };
+		7895971F2A7049C900B71097 /* TRMessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRMessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		789596F62A7049C800B71097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7895970C2A7049C900B71097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789597162A7049C900B71097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		789596F02A7049C800B71097 = {
+			isa = PBXGroup;
+			children = (
+				789596FB2A7049C800B71097 /* TRMessenger */,
+				789597122A7049C900B71097 /* TRMessengerTests */,
+				7895971C2A7049C900B71097 /* TRMessengerUITests */,
+				789596FA2A7049C800B71097 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		789596FA2A7049C800B71097 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				789596F92A7049C800B71097 /* TRMessenger.app */,
+				7895970F2A7049C900B71097 /* TRMessengerTests.xctest */,
+				789597192A7049C900B71097 /* TRMessengerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		789596FB2A7049C800B71097 /* TRMessenger */ = {
+			isa = PBXGroup;
+			children = (
+				789596FC2A7049C800B71097 /* AppDelegate.swift */,
+				789596FE2A7049C800B71097 /* SceneDelegate.swift */,
+				789597002A7049C800B71097 /* ViewController.swift */,
+				789597022A7049C800B71097 /* Main.storyboard */,
+				789597052A7049C900B71097 /* Assets.xcassets */,
+				789597072A7049C900B71097 /* LaunchScreen.storyboard */,
+				7895970A2A7049C900B71097 /* Info.plist */,
+			);
+			path = TRMessenger;
+			sourceTree = "<group>";
+		};
+		789597122A7049C900B71097 /* TRMessengerTests */ = {
+			isa = PBXGroup;
+			children = (
+				789597132A7049C900B71097 /* TRMessengerTests.swift */,
+			);
+			path = TRMessengerTests;
+			sourceTree = "<group>";
+		};
+		7895971C2A7049C900B71097 /* TRMessengerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7895971D2A7049C900B71097 /* TRMessengerUITests.swift */,
+				7895971F2A7049C900B71097 /* TRMessengerUITestsLaunchTests.swift */,
+			);
+			path = TRMessengerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		789596F82A7049C800B71097 /* TRMessenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 789597232A7049C900B71097 /* Build configuration list for PBXNativeTarget "TRMessenger" */;
+			buildPhases = (
+				789596F52A7049C800B71097 /* Sources */,
+				789596F62A7049C800B71097 /* Frameworks */,
+				789596F72A7049C800B71097 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TRMessenger;
+			productName = TRMessenger;
+			productReference = 789596F92A7049C800B71097 /* TRMessenger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7895970E2A7049C900B71097 /* TRMessengerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 789597262A7049C900B71097 /* Build configuration list for PBXNativeTarget "TRMessengerTests" */;
+			buildPhases = (
+				7895970B2A7049C900B71097 /* Sources */,
+				7895970C2A7049C900B71097 /* Frameworks */,
+				7895970D2A7049C900B71097 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				789597112A7049C900B71097 /* PBXTargetDependency */,
+			);
+			name = TRMessengerTests;
+			productName = TRMessengerTests;
+			productReference = 7895970F2A7049C900B71097 /* TRMessengerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		789597182A7049C900B71097 /* TRMessengerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 789597292A7049C900B71097 /* Build configuration list for PBXNativeTarget "TRMessengerUITests" */;
+			buildPhases = (
+				789597152A7049C900B71097 /* Sources */,
+				789597162A7049C900B71097 /* Frameworks */,
+				789597172A7049C900B71097 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7895971B2A7049C900B71097 /* PBXTargetDependency */,
+			);
+			name = TRMessengerUITests;
+			productName = TRMessengerUITests;
+			productReference = 789597192A7049C900B71097 /* TRMessengerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		789596F12A7049C800B71097 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					789596F82A7049C800B71097 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					7895970E2A7049C900B71097 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 789596F82A7049C800B71097;
+					};
+					789597182A7049C900B71097 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 789596F82A7049C800B71097;
+					};
+				};
+			};
+			buildConfigurationList = 789596F42A7049C800B71097 /* Build configuration list for PBXProject "TRMessenger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 789596F02A7049C800B71097;
+			productRefGroup = 789596FA2A7049C800B71097 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				789596F82A7049C800B71097 /* TRMessenger */,
+				7895970E2A7049C900B71097 /* TRMessengerTests */,
+				789597182A7049C900B71097 /* TRMessengerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		789596F72A7049C800B71097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789597092A7049C900B71097 /* LaunchScreen.storyboard in Resources */,
+				789597062A7049C900B71097 /* Assets.xcassets in Resources */,
+				789597042A7049C800B71097 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7895970D2A7049C900B71097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789597172A7049C900B71097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		789596F52A7049C800B71097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789597012A7049C800B71097 /* ViewController.swift in Sources */,
+				789596FD2A7049C800B71097 /* AppDelegate.swift in Sources */,
+				789596FF2A7049C800B71097 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7895970B2A7049C900B71097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789597142A7049C900B71097 /* TRMessengerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789597152A7049C900B71097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789597202A7049C900B71097 /* TRMessengerUITestsLaunchTests.swift in Sources */,
+				7895971E2A7049C900B71097 /* TRMessengerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		789597112A7049C900B71097 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 789596F82A7049C800B71097 /* TRMessenger */;
+			targetProxy = 789597102A7049C900B71097 /* PBXContainerItemProxy */;
+		};
+		7895971B2A7049C900B71097 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 789596F82A7049C800B71097 /* TRMessenger */;
+			targetProxy = 7895971A2A7049C900B71097 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		789597022A7049C800B71097 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				789597032A7049C800B71097 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		789597072A7049C900B71097 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				789597082A7049C900B71097 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		789597212A7049C900B71097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		789597222A7049C900B71097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		789597242A7049C900B71097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K4A9T7D84R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TRMessenger/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TR.TRMessenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		789597252A7049C900B71097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K4A9T7D84R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TRMessenger/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TR.TRMessenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		789597272A7049C900B71097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K4A9T7D84R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TR.TRMessengerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TRMessenger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TRMessenger";
+			};
+			name = Debug;
+		};
+		789597282A7049C900B71097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K4A9T7D84R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TR.TRMessengerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TRMessenger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TRMessenger";
+			};
+			name = Release;
+		};
+		7895972A2A7049C900B71097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K4A9T7D84R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TR.TRMessengerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TRMessenger;
+			};
+			name = Debug;
+		};
+		7895972B2A7049C900B71097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K4A9T7D84R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TR.TRMessengerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TRMessenger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		789596F42A7049C800B71097 /* Build configuration list for PBXProject "TRMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				789597212A7049C900B71097 /* Debug */,
+				789597222A7049C900B71097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		789597232A7049C900B71097 /* Build configuration list for PBXNativeTarget "TRMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				789597242A7049C900B71097 /* Debug */,
+				789597252A7049C900B71097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		789597262A7049C900B71097 /* Build configuration list for PBXNativeTarget "TRMessengerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				789597272A7049C900B71097 /* Debug */,
+				789597282A7049C900B71097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		789597292A7049C900B71097 /* Build configuration list for PBXNativeTarget "TRMessengerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7895972A2A7049C900B71097 /* Debug */,
+				7895972B2A7049C900B71097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 789596F12A7049C800B71097 /* Project object */;
+}
