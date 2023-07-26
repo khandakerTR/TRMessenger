@@ -11,13 +11,14 @@
 		395E3AFE598970A0FCE0A629 /* Pods_TRMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120DEC76CC180ACA139AFDF6 /* Pods_TRMessenger.framework */; };
 		789596FD2A7049C800B71097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789596FC2A7049C800B71097 /* AppDelegate.swift */; };
 		789596FF2A7049C800B71097 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789596FE2A7049C800B71097 /* SceneDelegate.swift */; };
-		789597012A7049C800B71097 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789597002A7049C800B71097 /* ViewController.swift */; };
+		789597012A7049C800B71097 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789597002A7049C800B71097 /* LoginViewController.swift */; };
 		789597042A7049C800B71097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789597022A7049C800B71097 /* Main.storyboard */; };
 		789597062A7049C900B71097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789597052A7049C900B71097 /* Assets.xcassets */; };
 		789597092A7049C900B71097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789597072A7049C900B71097 /* LaunchScreen.storyboard */; };
 		789597142A7049C900B71097 /* TRMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789597132A7049C900B71097 /* TRMessengerTests.swift */; };
 		7895971E2A7049C900B71097 /* TRMessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7895971D2A7049C900B71097 /* TRMessengerUITests.swift */; };
 		789597202A7049C900B71097 /* TRMessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7895971F2A7049C900B71097 /* TRMessengerUITestsLaunchTests.swift */; };
+		78EFA6672A71A32100A03036 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78EFA6662A71A32100A03036 /* GoogleService-Info.plist */; };
 		A5660D4C8A5F7BBA00AEBDF3 /* Pods_TRMessengerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B153026E0457C3C761CF1D67 /* Pods_TRMessengerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +46,7 @@
 		789596F92A7049C800B71097 /* TRMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		789596FC2A7049C800B71097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		789596FE2A7049C800B71097 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		789597002A7049C800B71097 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		789597002A7049C800B71097 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		789597032A7049C800B71097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		789597052A7049C900B71097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		789597082A7049C900B71097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		789597192A7049C900B71097 /* TRMessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRMessengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7895971D2A7049C900B71097 /* TRMessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRMessengerUITests.swift; sourceTree = "<group>"; };
 		7895971F2A7049C900B71097 /* TRMessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRMessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		78EFA6662A71A32100A03036 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8126B775C76F72D14F30814D /* Pods-TRMessenger-TRMessengerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRMessenger-TRMessengerUITests.debug.xcconfig"; path = "Target Support Files/Pods-TRMessenger-TRMessengerUITests/Pods-TRMessenger-TRMessengerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A570D4EAB3501EB3DBEB025 /* Pods_TRMessenger_TRMessengerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TRMessenger_TRMessengerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4303859C593991A00A3A9D /* Pods-TRMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRMessenger.release.xcconfig"; path = "Target Support Files/Pods-TRMessenger/Pods-TRMessenger.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		781534E52A705C91003C2370 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				789597002A7049C800B71097 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		789596F02A7049C800B71097 = {
 			isa = PBXGroup;
 			children = (
@@ -118,11 +128,12 @@
 			children = (
 				7895972E2A7049FB00B71097 /* View */,
 				7895972C2A7049DB00B71097 /* Application */,
-				789597002A7049C800B71097 /* ViewController.swift */,
+				781534E52A705C91003C2370 /* Controllers */,
 				789597022A7049C800B71097 /* Main.storyboard */,
 				789597052A7049C900B71097 /* Assets.xcassets */,
 				789597072A7049C900B71097 /* LaunchScreen.storyboard */,
 				7895970A2A7049C900B71097 /* Info.plist */,
+				78EFA6662A71A32100A03036 /* GoogleService-Info.plist */,
 			);
 			path = TRMessenger;
 			sourceTree = "<group>";
@@ -180,7 +191,6 @@
 				768DD28B88A7A7F6B3A0F927 /* Pods-TRMessengerTests.debug.xcconfig */,
 				008ADDCB27C384A23DAF665B /* Pods-TRMessengerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -294,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				789597092A7049C900B71097 /* LaunchScreen.storyboard in Resources */,
+				78EFA6672A71A32100A03036 /* GoogleService-Info.plist in Resources */,
 				789597062A7049C900B71097 /* Assets.xcassets in Resources */,
 				789597042A7049C800B71097 /* Main.storyboard in Resources */,
 			);
@@ -423,7 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				789597012A7049C800B71097 /* ViewController.swift in Sources */,
+				789597012A7049C800B71097 /* LoginViewController.swift in Sources */,
 				789596FD2A7049C800B71097 /* AppDelegate.swift in Sources */,
 				789596FF2A7049C800B71097 /* SceneDelegate.swift in Sources */,
 			);
