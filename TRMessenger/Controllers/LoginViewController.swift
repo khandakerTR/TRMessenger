@@ -9,9 +9,12 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    @IBOutlet weak var accountLoginLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var confirmPassword: UILabel!
+    @IBOutlet weak var forgetPassword: UIButton!
+    @IBOutlet weak var singUpLoginToggleButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var confirmPasswordView: UIView!
     @IBOutlet weak var emailTextField: UITextField!
@@ -38,17 +41,21 @@ class LoginViewController: UIViewController {
     
     @IBAction func singUpButtonTapped(_ sender: UIButton) {
         isShowingSingUp = !isShowingSingUp
-        showAndHideConfirmPasswordField(status: isShowingSingUp)
+        showAndHideConfirmPasswordField(isSingUp: isShowingSingUp)
+        self.accountLoginLabel.text = self.isShowingSingUp ?  "Have an account?" : "Don't Have an account?"
+        let buttonTitle = self.isShowingSingUp ? "Login" : "SingUp"
+        self.singUpLoginToggleButton.setTitle(buttonTitle, for: .normal)
+        let image = isShowingSingUp ? UIImage(named: "registerBtn") : UIImage(named: "loginBtn")
+        self.loginButton.setImage(image, for: .normal)
     }
-    
 }
 
 extension LoginViewController {
     
-    func showAndHideConfirmPasswordField(status: Bool) {
+    func showAndHideConfirmPasswordField(isSingUp: Bool) {
         UIView.animate(withDuration: 0.5) {
-            self.confirmPasswordView.isHidden = !status
-            //self.loginButton.setImage(<#T##image: UIImage?##UIImage?#>, for: <#T##UIControl.State#>)
+            self.confirmPasswordView.isHidden = !isSingUp
+            self.forgetPassword.isHidden = isSingUp
         }
     }
     

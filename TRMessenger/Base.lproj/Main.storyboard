@@ -33,13 +33,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="53"/>
                                         <subviews>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHP-hU-4Gi">
-                                                <rect key="frame" x="0.0" y="0.0" width="47" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="40.666666666666664" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0dH-6w-GzK">
-                                                <rect key="frame" x="0.0" y="32" width="374" height="19"/>
+                                                <rect key="frame" x="0.0" y="28.333333333333329" width="374" height="22.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
@@ -71,13 +71,13 @@
                                         <rect key="frame" x="0.0" y="61" width="374" height="53"/>
                                         <subviews>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgU-aw-1Ei">
-                                                <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="73.333333333333329" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LEZ-t6-Prk">
-                                                <rect key="frame" x="0.0" y="32" width="374" height="19"/>
+                                                <rect key="frame" x="0.0" y="28.333333333333343" width="374" height="22.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
@@ -109,12 +109,12 @@
                                         <rect key="frame" x="0.0" y="114" width="374" height="10"/>
                                         <subviews>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dz0-dg-aNe">
-                                                <rect key="frame" x="0.0" y="0.0" width="159.66666666666666" height="0.0"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="138.66666666666666" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TyB-uV-jVw">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TyB-uV-jVw">
                                                 <rect key="frame" x="0.0" y="8" width="374" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -146,18 +146,18 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ary-am-wk5">
-                                <rect key="frame" x="20" y="218" width="126" height="30"/>
+                                <rect key="frame" x="20" y="218" width="140" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Forget Password ?"/>
                                 <connections>
                                     <action selector="forgetPasswordButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MKd-pv-KzE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqO-ct-N6V">
-                                <rect key="frame" x="60" y="264" width="294" height="62"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqO-ct-N6V">
+                                <rect key="frame" x="60" y="267" width="294" height="62"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" backgroundImage="loginBtn"/>
-                                <state key="selected" image="registerBtn"/>
                                 <connections>
                                     <action selector="loginAndRegisterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tm4-wF-wZv"/>
                                 </connections>
@@ -207,14 +207,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="accountLoginLabel" destination="uKd-ir-wio" id="vKE-vl-cey"/>
                         <outlet property="confirmPassword" destination="Dz0-dg-aNe" id="hcR-KQ-bEh"/>
                         <outlet property="confirmPasswordTextField" destination="TyB-uV-jVw" id="cbT-ui-7Ag"/>
                         <outlet property="confirmPasswordView" destination="EGB-p8-u0h" id="BqW-oT-bb6"/>
                         <outlet property="emailLabel" destination="zHP-hU-4Gi" id="Oby-04-eb3"/>
                         <outlet property="emailTextField" destination="0dH-6w-GzK" id="ZU8-Zz-d1V"/>
+                        <outlet property="forgetPassword" destination="Ary-am-wk5" id="5Mp-k3-4eW"/>
                         <outlet property="loginButton" destination="PqO-ct-N6V" id="tsf-WK-a4U"/>
                         <outlet property="passwordLabel" destination="WgU-aw-1Ei" id="w7d-JY-jUx"/>
                         <outlet property="passwordTextField" destination="LEZ-t6-Prk" id="yCa-eu-y2w"/>
+                        <outlet property="singUpLoginToggleButton" destination="Ryz-xv-083" id="BLz-OC-QjM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -225,7 +228,6 @@
     <resources>
         <image name="loginBG" width="240" height="438"/>
         <image name="loginBtn" width="294" height="62"/>
-        <image name="registerBtn" width="294" height="62"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
