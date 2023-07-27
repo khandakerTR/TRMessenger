@@ -6,17 +6,21 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class LoginViewController: UIViewController {
     
-    @IBOutlet weak var accountLoginLabel: UILabel!
+    @IBOutlet weak var confirmPasswordView: UIView!
+
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var confirmPassword: UILabel!
+    @IBOutlet weak var accountLoginLabel: UILabel!
+    
+    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var forgetPassword: UIButton!
     @IBOutlet weak var singUpLoginToggleButton: UIButton!
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var confirmPasswordView: UIView!
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
@@ -29,13 +33,23 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func forgetPasswordButtonTapped(_ sender: UIButton) {
+        if isInputValidData(for: "password") {
+
+        } else {
+            ProgressHUD.showFailed("Email Needed")
+        }
     }
     
     @IBAction func loginAndRegisterButtonTapped(_ sender: UIButton) {
-        if isShowingSingUp {
-            
+        
+        if isInputValidData(for: isShowingSingUp ? "signup" : "login") {
+            if isShowingSingUp {
+                
+            } else {
+                
+            }
         } else {
-            
+            ProgressHUD.showFailed("All Field Required")
         }
     }
     
@@ -45,8 +59,6 @@ class LoginViewController: UIViewController {
         self.accountLoginLabel.text = self.isShowingSingUp ?  "Have an account?" : "Don't Have an account?"
         let buttonTitle = self.isShowingSingUp ? "Login" : "SingUp"
         self.singUpLoginToggleButton.setTitle(buttonTitle, for: .normal)
-        let image = isShowingSingUp ? UIImage(named: "registerBtn") : UIImage(named: "loginBtn")
-        self.loginButton.setImage(image, for: .normal)
     }
 }
 
@@ -56,6 +68,19 @@ extension LoginViewController {
         UIView.animate(withDuration: 0.5) {
             self.confirmPasswordView.isHidden = !isSingUp
             self.forgetPassword.isHidden = isSingUp
+            let image = isSingUp ? UIImage(named: "registerBtn") : UIImage(named: "loginBtn")
+            self.loginButton.setImage(image, for: .normal)
+        }
+    }
+    
+    func isInputValidData(for type: String)-> Bool {
+        switch type {
+        case "login":
+            return emailTextField.text != "" && passwordTextField.text != ""
+        case "signup":
+            return emailTextField.text != "" && passwordTextField.text != "" && confirmPasswordTextField.text != ""
+        default:
+            return emailTextField.text != ""
         }
     }
     
@@ -69,15 +94,14 @@ extension LoginViewController {
         case passwordTextField:
             passwordLabel.isHidden = isSelected ? false : true
             selectedTextField.placeholder = isSelected ? "" : "Password"
-
+            
         case confirmPasswordTextField:
             confirmPassword.isHidden = isSelected ? false : true
             selectedTextField.placeholder = isSelected ? "" : "Confirm Password"
-
+            
         default:
             print("OK")
         }
-
     }
 }
 
@@ -89,6 +113,5 @@ extension LoginViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         togglePlaceHolderAndLabel(textField, isSelected: false)
-
     }
 }
