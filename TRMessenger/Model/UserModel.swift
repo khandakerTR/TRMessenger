@@ -11,11 +11,11 @@ import FirebaseFirestoreSwift
 
 struct UserModel: Codable, Equatable {
     
-    var userID = ""
+    var userID: String
     var userName: String
     var userEmail: String
-    var userpushID = ""
-    var avatarLink = ""
+    var userpushID: String
+    var avatarLink: String
     var status: String
     
     static var currentUserID: String? {
@@ -40,4 +40,18 @@ struct UserModel: Codable, Equatable {
     static func == (lhs: UserModel, rhs: UserModel)-> Bool {
         return lhs.userID == rhs.userID
     }
+    
+
+}
+
+func saveUserLocally(user: UserModel) {
+    
+    do {
+        let data = try JSONEncoder().encode(user)
+        UserDefaults.standard.set(data, forKey: "currentUser")
+    } catch {
+        print("Error to save error locally",error.localizedDescription)
+    }
+    
+    
 }

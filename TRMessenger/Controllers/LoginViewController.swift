@@ -43,11 +43,7 @@ class LoginViewController: UIViewController {
     @IBAction func loginAndRegisterButtonTapped(_ sender: UIButton) {
         
         if isInputValidData(for: isShowingSingUp ? "signup" : "login") {
-            if isShowingSingUp {
-                
-            } else {
-                
-            }
+            isShowingSingUp ? registerUser() : loginUser()
         } else {
             ProgressHUD.showFailed("All Field Required")
         }
@@ -101,6 +97,38 @@ extension LoginViewController {
             
         default:
             print("OK")
+        }
+    }
+    
+    func registerUser () {
+        
+        if passwordTextField.text == confirmPasswordTextField.text {
+            FirebaseUserListener.shared.registrationUser(with: emailTextField.text!, and: passwordTextField.text!) { error in
+                if error == nil {
+                    ProgressHUD.showSucceed("Verification Email Sent")
+                    //Unhide email verification buttn
+                } else {
+                    ProgressHUD.showFailed("\(String(describing: error?.localizedDescription))")
+                }
+            }
+        } else {
+            ProgressHUD.showError("Password dosen't Match")
+        }
+    }
+    
+    func loginUser() {
+        FirebaseUserListener.shared.loginUser(with: emailTextField.text!, and: passwordTextField.text!) { error, isEmailVerified in
+            if error == nil {
+                if isEmailVerified {
+                    print("Successfully login ",UserModel.currentUser?.userEmail)
+                } else {
+                    ProgressHUD.showFailed("Email not verified, Please verify email")
+                    //unhide resend email verification button
+                }
+                
+            } else {
+                ProgressHUD.showFailed(error!.localizedDescription)
+            }
         }
     }
 }
