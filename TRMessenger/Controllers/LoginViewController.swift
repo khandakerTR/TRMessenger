@@ -121,6 +121,7 @@ extension LoginViewController {
             if error == nil {
                 if isEmailVerified {
                     print("Successfully login ",UserModel.currentUser?.userEmail)
+                    self.nagivateToMainVC()
                 } else {
                     ProgressHUD.showFailed("Email not verified, Please verify email")
                     //unhide resend email verification button
@@ -129,6 +130,13 @@ extension LoginViewController {
             } else {
                 ProgressHUD.showFailed(error!.localizedDescription)
             }
+        }
+    }
+    
+    func nagivateToMainVC() {
+        if let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainTabbarController") as? UITabBarController {
+            mainView.modalPresentationStyle = .fullScreen
+            self.present(mainView, animated: true)
         }
     }
 }

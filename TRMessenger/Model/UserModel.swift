@@ -40,8 +40,6 @@ struct UserModel: Codable, Equatable {
     static func == (lhs: UserModel, rhs: UserModel)-> Bool {
         return lhs.userID == rhs.userID
     }
-    
-
 }
 
 func saveUserLocally(user: UserModel) {
@@ -52,6 +50,4 @@ func saveUserLocally(user: UserModel) {
     } catch {
         print("Error to save error locally",error.localizedDescription)
     }
-    
-    
 }
