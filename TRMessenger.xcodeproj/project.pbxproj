@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1DE184A9C7C93C909FD9A067 /* Pods_TRMessenger_TRMessengerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A570D4EAB3501EB3DBEB025 /* Pods_TRMessenger_TRMessengerUITests.framework */; };
 		395E3AFE598970A0FCE0A629 /* Pods_TRMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120DEC76CC180ACA139AFDF6 /* Pods_TRMessenger.framework */; };
+		780C6ABC2A78290B00E97F5E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780C6ABB2A78290B00E97F5E /* SettingsViewController.swift */; };
+		780C6ABE2A78293000E97F5E /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780C6ABD2A78293000E97F5E /* SettingsTableViewCell.swift */; };
 		781587E12A76E15A00FED1A3 /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781587E02A76E15A00FED1A3 /* FCollectionReference.swift */; };
 		781587E42A76E33700FED1A3 /* FirebaseUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781587E32A76E33700FED1A3 /* FirebaseUserListener.swift */; };
 		789596FD2A7049C800B71097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789596FC2A7049C800B71097 /* AppDelegate.swift */; };
@@ -46,6 +48,8 @@
 		008ADDCB27C384A23DAF665B /* Pods-TRMessengerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRMessengerTests.release.xcconfig"; path = "Target Support Files/Pods-TRMessengerTests/Pods-TRMessengerTests.release.xcconfig"; sourceTree = "<group>"; };
 		120DEC76CC180ACA139AFDF6 /* Pods_TRMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TRMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		768DD28B88A7A7F6B3A0F927 /* Pods-TRMessengerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRMessengerTests.debug.xcconfig"; path = "Target Support Files/Pods-TRMessengerTests/Pods-TRMessengerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		780C6ABB2A78290B00E97F5E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		780C6ABD2A78293000E97F5E /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		781587E02A76E15A00FED1A3 /* FCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
 		781587E32A76E33700FED1A3 /* FirebaseUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserListener.swift; sourceTree = "<group>"; };
 		789596F92A7049C800B71097 /* TRMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,9 +103,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		780C6AB92A7828CE00E97F5E /* SettingsVC */ = {
+			isa = PBXGroup;
+			children = (
+				780C6ABB2A78290B00E97F5E /* SettingsViewController.swift */,
+				780C6ABA2A7828E800E97F5E /* Cell */,
+			);
+			path = SettingsVC;
+			sourceTree = "<group>";
+		};
+		780C6ABA2A7828E800E97F5E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				780C6ABD2A78293000E97F5E /* SettingsTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		781534E52A705C91003C2370 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				780C6AB92A7828CE00E97F5E /* SettingsVC */,
 				789597002A7049C800B71097 /* LoginViewController.swift */,
 			);
 			path = Controllers;
@@ -461,6 +483,8 @@
 			files = (
 				789597012A7049C800B71097 /* LoginViewController.swift in Sources */,
 				789596FD2A7049C800B71097 /* AppDelegate.swift in Sources */,
+				780C6ABE2A78293000E97F5E /* SettingsTableViewCell.swift in Sources */,
+				780C6ABC2A78290B00E97F5E /* SettingsViewController.swift in Sources */,
 				781587E12A76E15A00FED1A3 /* FCollectionReference.swift in Sources */,
 				78C80FCF2A72EAAF00FADD87 /* UserModel.swift in Sources */,
 				789596FF2A7049C800B71097 /* SceneDelegate.swift in Sources */,

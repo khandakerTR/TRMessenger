@@ -57,14 +57,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             if user != nil && UserDefaults.standard.object(forKey: "currentUser") != nil {
                 DispatchQueue.main.async {
                     print("goto main app")
-                    //navigateToMainApp()
+                    self.navigateToMainApp()
                 }
             }
         })
     }
     
     func navigateToMainApp() {
-        if let mainView = UIStoryboard(name: "", bundle: nil).instantiateViewController(identifier: "") as? UITabBarController {
+        if let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MainTabbarController") as? UITabBarController {
             self.window?.rootViewController = mainView
         }
     }

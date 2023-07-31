@@ -58,7 +58,6 @@ class FirebaseUserListener {
         }
     }
     
-    
     func downloadUserFromFirebase(userID: String, email: String?) {
         FirebaseReference(.User).document(userID).getDocument { documentSnapshot, error in
             
@@ -79,11 +78,19 @@ class FirebaseUserListener {
             case .failure(let error):
                 print("Encoding user",error.localizedDescription)
             }
-                                          
-    
-                                          
         }
     }
     
+    //MARK: - LogOut
     
+    func logOutCurrentUser(completion: @escaping (_ error: Error?)->()) {
+        do {
+            try Auth.auth().signOut()
+            UserDefaults.standard.removeObject(forKey: "currentUser")
+            completion(nil)
+        } catch {
+            print("Error to logout",error.localizedDescription)
+            completion(error)
+        }
+    }
 }
